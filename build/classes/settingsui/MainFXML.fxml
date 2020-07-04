@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="settingsui.MainController">
+   <children>
+      <AnchorPane fx:id="topbar" prefHeight="73.0" prefWidth="365.0" style="-fx-background-color: #579;">
+         <children>
+            <ImageView fx:id="btn_settings" fitHeight="33.0" fitWidth="30.0" layoutX="26.0" layoutY="32.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/settings.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_user" fitHeight="33.0" fitWidth="30.0" layoutX="121.0" layoutY="35.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="215.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/awards.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_exit" fitHeight="33.0" fitWidth="30.0" layoutX="310.0" layoutY="32.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/shutdown.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="awards" layoutY="91.0" prefHeight="433.0" prefWidth="365.0" style="-fx-background-color: #3D4956;" visible="false" />
+      <AnchorPane fx:id="h_settings" layoutY="91.0" prefHeight="433.0" prefWidth="365.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Label layoutX="24.0" layoutY="32.0" text="TOUCH ENABLED" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="toggleTouch" layoutX="261.0" layoutY="16.0" text="OFF" textFill="#eda678" toggleColor="#eda678" toggleLineColor="#eba478e2" />
+            <Label layoutX="24.0" layoutY="54.0" text="3D Touch, the new technology&#10;can sense pressure" textFill="#f2efef">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="111.0" text="AUTO-SUBSCRIBE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="toggleSubscription" layoutX="261.0" layoutY="95.0" text="OFF" textFill="#eda678" toggleColor="#eda678" toggleLineColor="#eba478e2" />
+            <Label layoutX="24.0" layoutY="133.0" text="Auto subscribe to this&#10;channel" textFill="#f2efef">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Separator layoutX="27.0" layoutY="208.0" opacity="0.33" prefHeight="2.0" prefWidth="318.0" />
+            <JFXSlider fx:id="brightnessSlider" layoutX="27.0" layoutY="260.0" prefHeight="14.0" prefWidth="318.0" />
+            <Label layoutX="34.0" layoutY="232.0" text="SCREEN BRIGHTNESS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="autoBrightness" checkedColor="#eda678" layoutX="57.0" layoutY="329.0" text="Auto Brightness" textFill="#fffdfd" />
+            <JFXButton layoutX="219.0" layoutY="379.0" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #eda678; -fx-background-radius: 5em; -fx-background-radius: 5em;" text="Save" />
+            <JFXButton layoutX="42.0" layoutY="379.0" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #515D6D; -fx-background-radius: 5em; -fx-background-radius: 5em;" text="Cancel" textFill="WHITE" />
+            <ImageView fx:id="btn_settings1" fitHeight="33.0" fitWidth="30.0" layoutX="27.0" layoutY="-20.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="h_user" layoutY="92.0" prefHeight="433.0" prefWidth="365.0" style="-fx-background-color: #3D4956;" visible="false">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="78.0" layoutX="141.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/user_male.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="154.0" layoutY="175.0" text="Olatunji A" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="198.0" text="UI/UX Designer" textFill="WHITE" />
+            <ImageView fx:id="btn_settings11" fitHeight="33.0" fitWidth="30.0" layoutX="122.0" layoutY="-21.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@menu_icons/arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
